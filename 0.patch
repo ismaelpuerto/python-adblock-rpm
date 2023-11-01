@@ -1,0 +1,49 @@
+--- /tmp/adblock-0.6.0/Cargo.toml       1970-01-01 01:00:00.000000000
++0100
++++ Cargo.toml  2023-09-05 22:52:41.195936634 +0200
+@@ -9,15 +9,6 @@
+ homepage = "https://github.com/ArniDagur/python-adblock"
+ repository = "https://github.com/ArniDagur/python-adblock"
+
+-[package.metadata.maturin]
+-classifier = [
+-    "Programming Language :: Python",
+-    "Programming Language :: Rust",
+-    "License :: OSI Approved :: MIT License",
+-    "License :: OSI Approved :: Apache Software License",
+-]
+-requires-python = ">=3.7"
+-
+ [profile.release]
+ debug = true
+
+--- /tmp/adblock-0.6.0/pyproject.toml   2022-07-18 01:00:45.000000000 +0200
++++ pyproject.toml      2023-09-05 22:53:34.301325529 +0200
+@@ -1,6 +1,19 @@
++[project]
++name = "adblock"
++version = "0.6.0"
++description = "Brave's adblocking in Python"
++requires-python = ">=3.7"
++authors = [{ name = "Árni Dagur", email = "arni@dagur.eu" }]
++classifiers = [
++    "Programming Language :: Python",
++    "Programming Language :: Rust",
++    "License :: OSI Approved :: MIT License",
++    "License :: OSI Approved :: Apache Software License",
++]
++
+ [tool.poetry]
+ name = "adblock"
+-version = "0.0.0"
++version = "0.6.0"
+ description = "Brave's adblocking in Python"
+ authors = ["Árni Dagur <arni@dagur.eu>"]
+
+@@ -13,5 +26,5 @@
+ toml = "*"
+
+ [build-system]
+-requires = ["maturin>=0.12,<0.13"]
++requires = ["maturin>=0.12"]
+ build-backend = "maturin"
