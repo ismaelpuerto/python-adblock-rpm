@@ -10,6 +10,7 @@ URL:            https://pypi.org/project/adblock/
 Source0:        %{pypi_source}
 
 Patch0:         0.patch
+Patch1:         1.patch
 
 BuildRequires:  python3-devel
 BuildRequires:  cargo
